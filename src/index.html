@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        $(document).ready (function(){
-            $("p").css({"background-color":"green","color":"white","font-size":"25px","padding":"15px"})
-
-        })
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".test").remove();
+        });
+        $("#btn2").click(function () {
+          $(".demo").remove();
+      });
+    });
     </script>
-    <p>This is a simple paragraph.</p>
-</body>
+    <div class="test">This is test class.</div>
+    <div class="demo">This is demo class.</div>
+    <div class="test">This is test class.</div>
+    <div class="demo">This is demo class.</div>
+    <div class="test">This is test class.</div>
+    <div class="demo">This is demo class.</div>
+    <div class="test">This is test class.</div>
+    <button id="btn1">Remove test class</button>
+    <button id="btn2">Remove demo class</button>
+  </body>
 </html>
