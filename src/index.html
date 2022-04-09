@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
-<title>jQuery Change Button Text</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-    $("button").click(function() {
-        $("button").text("Processing");
-    })
-});
-</script>
+    <title>
+        Find class of the clicked element.
+    </title>
+
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+  
+    <script>
+        $(document).ready(function () {
+            $("div").click(function () {
+                var getClass = this.className;
+                alert("The class of the clicked element is "+getClass);
+                console.log(getClass);
+            });
+        });
+    </script>
 </head>
-<body>
-    <button type="button" id="myButton" value="click me">click me</button>
+  
+<body style="text-align: center;">
+
+    <div class="main">Main Div</div>
+    <div class="GFG">GFG</div>
+    <div class="click">click</div>
+    <div class="G4G">GforG</div>
+    <div class="welcome">Welcome</div>
 </body>
+  
 </html>
