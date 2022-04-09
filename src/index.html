@@ -3,6 +3,7 @@
  
 <head>
     <title>Chess board</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         body {
             text-align: center;
@@ -33,6 +34,11 @@
     <br><br>
  
     <script type="text/javascript">
+        $(document).ready(function(){
+  $("td").mouseenter(function(){
+    $(this).css("background-color", "yellow");
+  });
+});
  
         // Create a center tag to center all the elements
         var center = document.createElement('center');
